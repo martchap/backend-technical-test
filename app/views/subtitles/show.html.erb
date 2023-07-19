@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @subtitle.filename %>
+</h1>
+<p>
+  <%= @subtitle.body %>
+</p>
+<%= link_to 'Edit', edit_subtitle_path(@subtitle) %> |
+<%= link_to 'Back', subtitles_path %>

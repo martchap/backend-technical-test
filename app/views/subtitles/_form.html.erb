@@ -1,0 +1,12 @@
+<%= form_with(model: subtitle) do |form| %>
+  <form>
+    <div class="form-group">
+      <label>SRT File</label>
+      <%= form.file_field :file, class: "form-control",type: "file", id: "formFile" %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= submit_tag("Submit", name: nil, class: "btn btn-primary") %>
+    </div>
+  </form>
+<% end %>
